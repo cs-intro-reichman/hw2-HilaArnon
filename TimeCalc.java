@@ -21,11 +21,7 @@ public class TimeCalc {
         int totalHours = totalMinutes / 60;
         int hours = totalHours % 24;
         int minutes = totalMinutes - (totalHours * 60);
-        /*int hours = inputHours + (minutesToAdd / 24);
-        System.out.println("hours " + hours);
-        System.out.println("minutesToAdd % 24" + minutesToAdd / 24);
-        int minutes = inputMinutes + (minutesToAdd - (hours * 60));
-        System.out.println("minutesToAdd - (hours * 60) " + (minutesToAdd - (hours * 60)));*/
+    
         if (minutes >= 60){
             hours ++;
             minutes -= 60;
