@@ -1,5 +1,6 @@
 public class TimeCalc {
     /*
+     * First question (20 points)
      * The TimeCalc program gets a time input which is given using the 24-hour hh:mm format, and a
      * number of minutesToAdd input. The program computes time + minutesToAdd, and prints the
      * resulting time using the 24-hour hh:mm format. For example, the time 10:30 + 4055 minutes

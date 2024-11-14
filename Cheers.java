@@ -22,8 +22,8 @@ public class Cheers {
             String word = args[0];
             int times = Integer.parseInt(args[1]);
             String upperCaseWord = word.toUpperCase();
-            String special = "AEFHILMNORSX";
-            
+            String special = "AEFHILMNORSX";   
+
             int placeOfChar = 0;
             while (placeOfChar < upperCaseWord.length()){
                 char correntLetter = upperCaseWord.charAt(placeOfChar);
@@ -31,7 +31,7 @@ public class Cheers {
                 if (special.indexOf(correntLetter) >= 0){
                         System.out.print("an ");
                 } else {
-                        System.out.print("a ");
+                        System.out.print("a  ");
                 }
                 System.out.println(correntLetter + ": " + correntLetter + "!");
                 placeOfChar++;
