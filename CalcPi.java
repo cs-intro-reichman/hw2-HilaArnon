@@ -12,7 +12,7 @@ public class CalcPi {
         int times = Integer.parseInt(args[0]);
         int denominator = 3;
         double countPI = 1.0;
-        while (times > 0){
+        while (times >= 0){
             if (times % 2 == 0){
                 countPI -= 1.0 / denominator;
                 System.out.println("- 1/" + denominator);

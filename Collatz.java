@@ -7,10 +7,14 @@ public class Collatz {
         int N = Integer.parseInt(args[0]);
 		String mode = args[1];
 		int counterN = 1;
+		boolean first1 = false;
 		if (mode.equals("v")){
 			while(counterN <= N){
 				int correntN = counterN;
-				while(correntN != 1){
+				int timesTo1 = 0;
+				while(correntN != 1 || !first1){
+					first1 = true;
+					timesTo1 ++;
 					System.out.print(correntN + " ");	
 					if (correntN % 2 == 0){				//Even
 						correntN /= 2;
@@ -18,7 +22,7 @@ public class Collatz {
 						correntN = (correntN * 3) + 1;
 					}
 				}
-				System.out.println(1);
+				System.out.println(1 + " (" + (timesTo1 + 1) + ")");
 				counterN ++;
 			}
 		} 
