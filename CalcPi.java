@@ -24,7 +24,7 @@ public class CalcPi {
             times --;
         }
         System.out.println("pi according to Java: 3.141592653589793");
-        System.out.println("pi, approximated: " + (countPI *4.0));
+        System.out.print("pi, approximated: " + (countPI *4.0));
     }
 }
 
