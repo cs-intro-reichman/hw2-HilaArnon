@@ -10,22 +10,24 @@ public class CalcPi {
      */
     public static void main(String [] args) { 
         int times = Integer.parseInt(args[0]);
-        int denominator = 3;
+        double denominator = 3.0;
         double countPI = 1.0;
-        while (times >= 0){
+        while (times > 1){
             if (times % 2 == 0){
                 countPI -= 1.0 / denominator;
-                System.out.println("- 1/" + denominator);
+                //System.out.println("- 1/" + denominator);
             } else {
                 countPI += 1.0 / denominator;
-                System.out.println("+ 1/" + denominator);
+                //;System.out.println("+ 1/" + denominator);
             }
-            denominator += 2;
+            denominator += 2.0;
             times --;
         }
         System.out.println("pi according to Java: 3.141592653589793");
-        System.out.println("pi, approximated: " + (countPI *4));
+        System.out.println("pi, approximated: " + (countPI *4.0));
     }
 }
+
+
 
 
