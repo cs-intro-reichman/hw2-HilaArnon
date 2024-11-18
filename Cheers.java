@@ -21,9 +21,22 @@ public class Cheers {
         public static void main(String[] args) {
             String word = args[0];
             int times = Integer.parseInt(args[1]);
-            String upperCaseWord = word.toUpperCase();
-            String special = "AEFHILMNORSX";   
 
+            //Change lowercase letters to uppercase letters
+            String upperCaseWord = "";
+            String upperLetters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+            int i = 0;
+            while(i < word.length()){
+                char ch = word.charAt(i);
+                int upperIndex = upperLetters.indexOf(ch);
+                if (upperIndex == -1){      //small letter   
+                        ch -= 32;           //ASCII
+                }
+                upperCaseWord += ch;
+                i ++;
+            }
+
+            String special = "AEFHILMNORSX";   
             int placeOfChar = 0;
             while (placeOfChar < upperCaseWord.length()){
                 char correntLetter = upperCaseWord.charAt(placeOfChar);
