@@ -10,15 +10,21 @@ public class CalcPi {
      */
     public static void main(String [] args) { 
         int times = Integer.parseInt(args[0]);
+        //Importent in the while loop to know
+        boolean timesIsEven;
+        if (times % 2 == 0){
+            timesIsEven = true;
+        } else {
+            timesIsEven = false;
+        }
+
         double denominator = 3.0;
-        double countPI = 1.0;
+        double countPI = 1.0;      //The answer
         while (times > 1){
-            if (times % 2 == 0){
+            if ((times % 2 == 0 && timesIsEven) || (times % 2 != 0 && !timesIsEven)){
                 countPI -= 1.0 / denominator;
-                //System.out.println("- 1/" + denominator);
             } else {
                 countPI += 1.0 / denominator;
-                //;System.out.println("+ 1/" + denominator);
             }
             denominator += 2.0;
             times --;

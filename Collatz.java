@@ -4,10 +4,10 @@ public class Collatz {
 	 * Fifth question (30 points)
 	 */
 	public static void main(String args[]) {
-        int N = Integer.parseInt(args[0]);
+        int N = Integer.parseInt(args[0]);    //Highest seed
 		String mode = args[1];
 		int counterN = 1;
-		boolean first1 = false;
+		boolean first1 = false;     //when counterN == 1 and didnt get inside the second while loop
 		if (mode.equals("v")){
 			while(counterN <= N){
 				int correntN = counterN;

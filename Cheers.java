@@ -22,10 +22,10 @@ public class Cheers {
             String word = args[0];
             int times = Integer.parseInt(args[1]);
 
-            //Change lowercase letters to uppercase letters
+            //Convert lowercase letters to uppercase letters
             String upperCaseWord = "";
             String upperLetters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-            int i = 0;
+            int i = 0; 
             while(i < word.length()){
                 char ch = word.charAt(i);
                 int upperIndex = upperLetters.indexOf(ch);
@@ -36,12 +36,13 @@ public class Cheers {
                 i ++;
             }
 
-            String special = "AEFHILMNORSX";   
+            //First part of the question
+            String special = "AEFHILMNORSX";
             int placeOfChar = 0;
             while (placeOfChar < upperCaseWord.length()){
                 char correntLetter = upperCaseWord.charAt(placeOfChar);
                 System.out.print("Give me ");                  
-                if (special.indexOf(correntLetter) >= 0){
+                if (special.indexOf(correntLetter) >= 0){   //Uniq letter
                         System.out.print("an ");
                 } else {
                         System.out.print("a  ");
@@ -50,6 +51,7 @@ public class Cheers {
                 placeOfChar++;
             }
 
+            //Second part of the question
             System.out.println("What does that spell?");
             int counter = 0;
             while (counter < times){
