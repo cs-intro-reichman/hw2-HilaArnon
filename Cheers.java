@@ -21,8 +21,9 @@ public class Cheers {
         public static void main(String[] args) {
             String word = args[0];
             int times = Integer.parseInt(args[1]);
+            String upperCaseWord = word.toUpperCase();
 
-            //Convert lowercase letters to uppercase letters
+           /*  //Convert lowercase letters to uppercase letters
             String upperCaseWord = "";
             String upperLetters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
             int i = 0; 
@@ -34,7 +35,7 @@ public class Cheers {
                 }
                 upperCaseWord += ch;
                 i ++;
-            }
+            } */
 
             //First part of the question
             String special = "AEFHILMNORSX";
